@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product"
+    android:layout_gravity="center"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/img_item_photo"/>
+        <TextView
+            android:layout_toRightOf="@id/img_item_photo"
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Program Kredit Bunga Murah"
+            android:maxLines="2"
+            android:textSize="12dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="4dp"/>
+        <TextView
+            android:layout_below="@id/tv_item_name"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:id="@+id/tv_item_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="Program Bunga Murah kredit multiguna dengan fitur bunga murah"
+            android:textSize="9dp"
+            android:layout_marginLeft="4dp"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

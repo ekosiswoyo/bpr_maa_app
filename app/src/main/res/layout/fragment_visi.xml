@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="12dp"
+            tools:ignore="WebViewLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_domain_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="VISI"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_drop"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/wv_visi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </WebView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/progressBarVisi"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_aleretVisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="Perikas Koneksi Anda"/>
+
+            </LinearLayout>
+
+
+            <!-- Misi -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/dark">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_domain_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="MISI"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_drop1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/wv_pengantar_pdrd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-20dp">
+
+            </WebView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_aleretMisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="Perikas Koneksi Anda"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

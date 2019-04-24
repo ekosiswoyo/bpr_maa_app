@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Main"
+            android:icon="@drawable/ic_home"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/nav_Profile"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="Profil" />
+
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_Tabungan"
+            android:title="Tabungan" />
+
+        <item
+            android:id="@+id/nav_Corporate"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Perusahaan" />
+        <item
+            android:id="@+id/nav_Product"
+            android:icon="@drawable/ic_label_black_24dp"
+            android:title="Produk" />
+        <item
+            android:id="@+id/nav_Career"
+            android:icon="@drawable/ic_directions_run_black_24dp"
+            android:title="Karir" />
+
+        <item
+            android:id="@+id/nav_ContactUs"
+            android:icon="@drawable/ic_contacts_black_24dp"
+            android:title="Hubungi Kami" />
+
+        <item
+            android:id="@+id/nav_Info"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="Info" />
+
+        <!--<item-->
+        <!--android:id="@+id/nav_Test"-->
+        <!--android:icon="@drawable/ic_build_black_24dp"-->
+        <!--android:title="Test" />-->
+
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+</menu>

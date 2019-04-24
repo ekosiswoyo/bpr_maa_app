@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bprmaa.mobiles">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.bprmaa.mobiles.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.bprmaa.mobiles.Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+
+            </intent-filter>
+        </service>
+        <service android:name="com.bprmaa.mobiles.Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.bprmaa.mobiles.Product.ProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.ActivityHistory.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Activity.GeneralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Activity.LihatFotoProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Activity.CareerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Activity.DetailCareerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Activity.ListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Tentang.TentangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.ActivityPengajuan.PengajuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.Firebase.FirebaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bprmaa.mobiles.TestActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.bprmaa.mobiles.Activity.PlayVideoActivity" />
+        <activity android:name="com.bprmaa.mobiles.Activity.OTPActivity"></activity>
+    </application>
+
+</manifest>

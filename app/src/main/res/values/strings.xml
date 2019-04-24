@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">BPR MAA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Kualifikasi">  1. Laki-laki atau Perempuan \n 2. Usia Maks. 35 Tahun \n
+        3.Berpengalaman diutamakan, Fresh Graduate silahkan   melamar \n 4. Pendidikan Min. D1 Segala Jurusan \n 5. Berorientasi Pada Target \n
+        6. Memiliki SIM C dan Kendaraan Pribadi
+    </string>
+    <string name="Alamat_BPR_MAA">Jl. Soegijopranoto No.92</string>
+
+    <string name="home">Beranda</string>
+    <string name="contact">Kontak</string>
+    <string name="info">Info</string>
+    <string name="profile">Profil</string>
+    <string name="visi">Visi &amp; Misi</string>
+
+    <string name="sejarah_bpr">Setelah lebih dari 1 semester melalui proses pengurusan Akte Pendirian dan perijinan, PT. BPR Mandiri Artha Abadi secara resmi melakukan kegiatan operasional perdananya pada tanggal 21 Oktober 2003 di jalan Soegiyopranoto no. 26 Semarang. Saat itu kondisi dan perlengkapan kantor, jumlah SDM dan sistem perbankan yang dimiliki masih sangat minim. Dengan karyawan dengan jumlah hanya 8 orang, termasuk dengan Direksi, PT. BPR MAA dengan penuh motivasi langsung melaksanakan kegiatan operasional perbankan konvensional, yakni : menghimpun dana dari masyarakat dalam bentuk Tabungan dan Deposito, serta menyalurkan pinjaman kepada masyarakat dalam bentuk Kredit.</string>
+    <string name="sejarah_bpr2">Dengan semangat yang tinggi dan melalui perjuangan tak kenal lelah serta usaha keras, BPR MAA mampu mencapai pertumbuhan usaha yang sangat baik. Bahkan dalam 2 tahun awal pendiriannya, indikator kemajuan bisnis menunjukkan growth yang mencapai 100 persen setiap tahunnya. Dengan perkembangan dan pertumbuhan bisnis yang pesat tersebut, maka pada tahun 2005, BPR MAA menambah areal gedung operasionalnya yaitu di jalan Soegiyopranoto no. 24 (berada tepat di sebelah gedung lama).</string>
+    <string name="visi_brp"></string>
+    <string name="misi1">Membangun citra yang baik dan profesional sehingga meningkatkan kepercayaan masyarakat demi terciptanya kepuasan pelayanan.</string>
+    <string name="misi2">Mewujudkan BPR yang inovatif dengan jaringan luas di Jawa Tengah yang memiliki teknologi informasi terdepan.</string>
+    <string name="misi3">Menjalin hubungan yang harmonis antara pemegang saham, karyawan dan nasabah untuk mewujudkan BPR yang terpercaya dan terkemuka.</string>
+    <string name="misi4">Menjadi BPR yang menguntungkan bagi stake holder dan mempunyai kepedulian sosial untuk mensejahterakan kehidupan masyarakat.</string>
+
+    <string name="selengkapnya"><u>Selengkapnya...</u></string>
+
+    <!-- User Prefenece -->
+
+    <string name="login_preference">id.can.web.bprmaamobile_login_preference</string>
+    <string name="login_status">id.can.web.bprmaamobile_login_status</string>
+
+    <string name="api_token">api_token</string>
+    <string name="username">Default Username</string>
+    <string name="email">Default Email</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="data_kosong">Gagal Mengirim Data</string>
+</resources>

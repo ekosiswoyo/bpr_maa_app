@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/tv_item_symbol"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Symbol" />
+
+        <TextView
+            android:id="@+id/tv_item_beli"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Beli" />
+
+        <TextView
+            android:id="@+id/tv_item_jual"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Beli" />
+
+    </LinearLayout>
+
+</LinearLayout>

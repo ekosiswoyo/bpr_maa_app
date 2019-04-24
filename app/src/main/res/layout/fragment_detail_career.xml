@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DetailCareerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background1"
+        android:padding="12dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_nama_lowongan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="MARKETING"
+                            android:textSize="24dp"
+                            android:textColor="@color/black"/>
+                        
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="@color/dark"
+                            android:text="Kualifikasi"/>
+
+                        <TextView
+                            android:id="@+id/tv_kualifikasi_lowongan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="@string/Kualifikasi"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="@color/dark"
+                            android:layout_marginTop="8dp"
+                            android:text="Fasilitas"/>
+
+                        <TextView
+                            android:id="@+id/tv_fasilitas_lowongan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Gaji Pokok, Bonus Intensif, BPJS, Tunjangan Transportasi, Tunjangan Kesehatan"/>
+
+
+                        <LinearLayout
+                            android:id="@+id/dc_div_apply"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/colorPrimary">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:text="Apply for job"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/dc_div_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="12dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Nama Lengkap"/>
+
+                    <EditText
+                        android:id="@+id/edt_nama_career"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Email"/>
+
+                    <EditText
+                        android:id="@+id/edt_email_career"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Nomor Telpon"/>
+
+                    <EditText
+                        android:id="@+id/edt_noTlp_career"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Description"/>
+
+                    <EditText
+                        android:id="@+id/edt_deskripsi_lowongan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:lines="8"
+                        android:maxLines="20"
+                        android:minLines="6"
+                        android:scrollbarStyle="insideOverlay"
+                        android:scrollbars="vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Upload Dokumen (PDF MAX 3MB)"/>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#e5e5e5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Pilih File"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:text="Kirim Lamaran"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/white"
+                        android:background="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyt_pemberitahuan"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Lamaran Anda sudah Terkirim"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"/>
+
+                        <Button
+                            android:id="@+id/btn_back"
+                            android:layout_width="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_height="30dp"
+                            android:text="Kembali ke Halaman Utama"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/white"
+                            android:background="@color/colorPrimary"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

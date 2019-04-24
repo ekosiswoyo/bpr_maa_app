@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KANTOR PUSAT"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_kantor_pusat"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="6dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="SEMARANG"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/tv_alamat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:text="Jl. Soegijopranoto, No. 92 Semarang."
+                            android:textSize="11dp" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Telp: (024) 355 4444"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#CEB068"
+                    android:paddingBottom="2dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KANTOR CABANG"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/pd_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:orientation="horizontal" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_cabang_majapahit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="6dp"
+                                    android:src="@drawable/ic_map_bpr" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="MAJAPAHIT"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="Jl. Brigjend Sudiarto No. 324, Semarang"
+                                    android:textSize="11dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Telp: (024) 7674 0055"
+                                    android:textSize="11dp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_cabang_ungaran"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="6dp"
+                                    android:src="@drawable/ic_map_bpr" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="UNGARAN"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="Jl. Diponegoro No. 118, Ungaran, Ungaran"
+                                    android:textSize="11dp" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Telp: (024) 355 4444"
+                                    android:textSize="11dp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_cabang_ngalian"
+                            android:layout_width="0dp"
+                            android:padding="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="6dp"
+                                    android:src="@drawable/ic_map_bpr" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="NGALIAN"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="Ruko Ngaliyan Square Blok A7, Seamarang"
+                                    android:textSize="11dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Telp: (024) 760 0783"
+                                    android:textSize="11dp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_cabang_kedungmundu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="6dp"
+                                    android:src="@drawable/ic_map_bpr" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="KEDUNGMUNDU"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="Jl.Kedungmundu Raya No.102, Semarang"
+                                    android:textSize="11dp" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Telp: (024) 355 4444"
+                                    android:textSize="11dp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_cabang_pati"
+                            android:padding="3dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="6dp"
+                                    android:src="@drawable/ic_map_bpr" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="PATI"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="JRuko Plaza Puri Jl. Kol. Sunandar No. 26A-30A"
+                                    android:textSize="11dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Telp: (0295) 386 555"
+                                    android:textSize="11dp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_cabang_boyolali"
+                            android:layout_width="0dp"
+                            android:padding="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+
+                            <LinearLayout
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="6dp"
+                                    android:src="@drawable/ic_map_bpr" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="BOYOLALI"
+                                    android:textColor="@color/black"
+                                    android:textSize="11dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="5dp"
+                                    android:text="Jl. Pandanaran No. 337,       Boyolali"
+                                    android:textSize="11dp" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Telp: (0276) 323666"
+                                    android:textSize="11dp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#CEB068" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KANTOR KAS"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/pd_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_kas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:orientation="horizontal" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_cabang_gang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:layout_weight="1"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="6dp"
+                                android:src="@drawable/ic_map_bpr" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:text="GANG TENGAH"
+                                android:textColor="@color/black"
+                                android:textSize="11dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:text="Jl. Gang Tengah, No. 87, Semarang"
+                                android:textSize="11dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="Telp: (024) 356 2211"
+                                android:textSize="11dp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_cabang_ambarawa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:layout_weight="1"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="6dp"
+                                android:src="@drawable/ic_map_bpr" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:text="AMBARAWA"
+                                android:textColor="@color/black"
+                                android:textSize="11dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:text="Jl. Jenderal Sudirman, Ruko Permata No. 4"
+                                android:textSize="11dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="Telp: (0298) 599 4000"
+                                android:textSize="11dp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#CEB068"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "578256221969",
+    "firebase_url": "https://bpr-maa-846d8.firebaseio.com",
+    "project_id": "bpr-maa-846d8",
+    "storage_bucket": "bpr-maa-846d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578256221969:android:b7e4cc36cbfefb64",
+        "android_client_info": {
+          "package_name": "com.bprmaa.bprmaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578256221969-tujl907mnguktdhb631lhrtc6ajphvsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaRc8zKWfAzmSj574H13T_6cXFId2lDeE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

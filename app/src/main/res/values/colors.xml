@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ED1B24</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ED1B24</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dark">#35464D</color>
+    <color name="red">#ED1B24</color>
+
+    <color name="merah">#b10008</color>
+    <color name="green">#0f9600</color>
+    <color name="yellow">#b9b000</color>
+
+    <color name="kuning">#FDD835</color>
+    <color name="background">#f3fdfd</color>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_title_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_pesan_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Email@email.com"
+        android:textSize="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_email_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Masukkan Email"/>
+
+    <EditText
+        android:id="@+id/edt_password_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <TextView
+        android:id="@+id/tv_lupa_password"
+        android:layout_marginLeft="3dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password?"
+        android:textSize="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_batal_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Batal"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/view_shadow" />
+
+        <Button
+            android:id="@+id/btn_Login_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Login"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="#c2c2c2" />
+
+    <TextView
+        android:id="@+id/tv_registrasi"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Buat Akun"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
